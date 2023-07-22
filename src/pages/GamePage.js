@@ -11,11 +11,8 @@ const GamePage = () => {
   const parsedLevelIndex = levelIndex ? parseInt(levelIndex, 10) : 0;
   const levelConfiguration = levels[parsedLevelIndex];
 
-  const allLevels = levels;
-  const [level, setLevel] = useState(allLevels[0]);
-
   const gameService = GameService.getInstance();
-  const tileMap = gameService.start(level);
+  const tileMap = gameService.start(levelConfiguration);
 
   useEffect(() => {
     gameService.freePlayer();
