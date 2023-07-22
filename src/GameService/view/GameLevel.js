@@ -3,7 +3,7 @@ import Tile from './Tile';
 import Player from './Player';
 import TileMap from './TileMap';
 
-const GameLevel = ({ levelConfiguration, tileMap }) => {
+const GameLevel = ({ levelConfiguration, tileMap, directionImage }) => {
   const { map, physicist, startPos, endPos } = levelConfiguration;
 
   // logic to render the game level based on the provided levelConfiguration
@@ -13,8 +13,8 @@ const GameLevel = ({ levelConfiguration, tileMap }) => {
       {/* use the map array to render the tiles.. just an example */}
       <TileMap tileMap={tileMap} />
 
-      {/* render the player using startPos */}
-      <Player startPos={startPos}/>
+      {/* render the player using startPos and pass the directionImage */}
+      <Player startPos={startPos} directionImage={directionImage} />
     </svg>
   );
 };

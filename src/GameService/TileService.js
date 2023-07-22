@@ -37,7 +37,6 @@ export default class TileService {
     }
 
     isWalkable(tileIndex){
-        console.log(tileIndex)
         if(!this.levelConfiguration) return true;
         return this.levelConfiguration.map[tileIndex.row][tileIndex.col]
     }
