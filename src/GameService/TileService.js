@@ -21,7 +21,7 @@ export default class TileService {
         for(let i=0; i<map.length; i++){
             let row = [];
             for(let j=0; j<map[0].length; j++){
-                row.push(<Tile size={TileService.tileSize} walkable={map[i][j]} x={TileService.tileSize * j} y={TileService.tileSize * i} />);
+                row.push(<Tile key={i + "" + j} size={TileService.tileSize} walkable={map[i][j]} x={TileService.tileSize * j} y={TileService.tileSize * i} />);
             }
             tileMap.push(row);
         }
@@ -37,8 +37,14 @@ export default class TileService {
     }
 
     isWalkable(tileIndex){
+        console.log(tileIndex)
         if(!this.levelConfiguration) return true;
-        console.log("iswalkabe: " + this.levelConfiguration.map[tileIndex.row][tileIndex.col])
         return this.levelConfiguration.map[tileIndex.row][tileIndex.col]
+    }
+
+    isInsideBounds(tileIndex){
+        let numOfRows = this.levelConfiguration.map.length;
+        let numOfCols = this.levelConfiguration.map[0].length;
+        return tileIndex.row > -1 && tileIndex.row < numOfRows && tileIndex.col > -1 && tileIndex.col < numOfCols;
     }
 }

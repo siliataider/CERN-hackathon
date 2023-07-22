@@ -7,7 +7,6 @@ function move(controller){
     }
 
     if(controller.playerService.isValidPosition(newPosition)){
-        console.log("valid position")
         controller.position.x = newPosition.x;
         controller.position.y = newPosition.y;
     

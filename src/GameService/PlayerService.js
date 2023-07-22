@@ -16,16 +16,15 @@ export default class PlayerService {
     isValidPosition(position){
         const tileService = this.gameService.tileService;
         const tileIndex = tileService.getTileIndex(position);
-        if(tileIndex.row < 0 || tileIndex.col < 0) return false;
+        if(!tileService.isInsideBounds(tileIndex)) return false;
         return tileService.isWalkable(tileIndex);
     }
 
     setStartPosition(config){
         this.playerController.position = {
-            x: (config.startPos[0] + 0.5) * TileService.tileSize,
-            y: (config.startPos[1] + 0.5) * TileService.tileSize
+            x: (config.startPos[1] + 0.5) * TileService.tileSize,
+            y: (config.startPos[0] + 0.5) * TileService.tileSize
         }
-        console.log(this.playerController.position)
     }
 
     start(){
