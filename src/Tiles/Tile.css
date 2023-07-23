@@ -1,0 +1,7 @@
+.tile .floor{
+    fill: white;
+}
+
+.tile .wall {
+    fill: black;
+}

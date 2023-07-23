@@ -1,0 +1,64 @@
+.character-container {
+  /* Use the same styles as the landing-page */
+  background-color: #0033a0;
+  color: #e2e8f4;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M4 0v4h4M12 0v4h4M20 0v4h4M28 0v4h4M4 12v4h4M12 12v4h4M20 12v4h4M28 12v4h4M4 20v4h4M12 20v4h4M20 20v4h4M28 20v4h4M4 28v4h4M12 28v4h4M20 28v4h4M28 28v4h4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.character-container h2{
+  text-align: center;
+  color: #e2e8f4;
+}
+
+.character-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.character-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.character-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.start-game-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #536ea8;
+  color: #e2e8f4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-game-button:hover {
+  background-color: #e2e8f4;
+  color: #536ea8;
+  border: 1px solid #536ea8;
+}
+
+.character-item.selected {
+  border-color: #e2e8f4; /* You can use any other color to indicate selection */
+}
+
