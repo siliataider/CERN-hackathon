@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.45085262.css",
+    "main.js": "/static/js/main.0a01d003.js",
+    "static/js/787.c961bb9c.chunk.js": "/static/js/787.c961bb9c.chunk.js",
+    "static/media/ground.png": "/static/media/ground.288680d99c1f09830f73.png",
+    "static/media/end.png": "/static/media/end.8939e3d362d5de50dca0.png",
+    "static/media/start.png": "/static/media/start.9937910c26510aa736f7.png",
+    "static/media/bluepipe2Vertical.png": "/static/media/bluepipe2Vertical.09aa6f008174cfbea3c0.png",
+    "static/media/bluepipe1Vertical.png": "/static/media/bluepipe1Vertical.4343aec980e50c51e4a9.png",
+    "static/media/horizontalpipe2.png": "/static/media/horizontalpipe2.6ec34766ea926968ce9e.png",
+    "static/media/horizontalpipe1.png": "/static/media/horizontalpipe1.0fabf984b801d75e2e61.png",
+    "static/media/walk.png": "/static/media/walk.1c8a04d017141c27fe92.png",
+    "static/media/physicist_face.png": "/static/media/physicist_face.6f1446824c3efdaa4e0b.png",
+    "index.html": "/index.html",
+    "main.45085262.css.map": "/static/css/main.45085262.css.map",
+    "main.0a01d003.js.map": "/static/js/main.0a01d003.js.map",
+    "787.c961bb9c.chunk.js.map": "/static/js/787.c961bb9c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45085262.css",
+    "static/js/main.0a01d003.js"
+  ]
+}
