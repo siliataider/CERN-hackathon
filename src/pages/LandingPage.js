@@ -22,7 +22,7 @@ const LandingPage = () => {
           <strong>"What are we made of?"</strong>
           <br></br>
           <br></br>
-          The levels will take you through <strong>journey into the history of subatomic physics.</strong> 
+          The levels will take you through <strong>a journey into the history of subatomic physics.</strong> 
           <br></br>
           <br></br>
           Are you ready to embark on this exciting adventure?
