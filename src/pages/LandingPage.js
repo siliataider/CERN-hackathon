@@ -17,7 +17,7 @@ const LandingPage = () => {
       <div className="content">
         <h1 className="title">What Are We Made Of?</h1>
         <p className="description">
-          Welcome on this adventure on the quest of finding the answer to the question:
+          Welcome to this adventure on the quest of finding the answer to the question:
           <br></br>
           <strong>"What are we made of?"</strong>
           <br></br>
