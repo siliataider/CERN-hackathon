@@ -13,7 +13,6 @@ Welcome to the CERN Hackathon Game - an interactive journey into the history of 
 - SVG Graphics: Scalable Vector Graphics used to render the game elements.
 - HTML and CSS: The foundation of the game's layout and design.
 - Node.js: A JavaScript runtime environment for the backend.
-- Express.js: A web application framework for Node.js used to serve the game.
 
 ## 🎮 How to Play
 
